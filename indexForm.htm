@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-image: url("https://static.vecteezy.com/system/resources/previews/004/968/002/original/cute-abstract-modern-background-free-vector.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: black;
+      /* filter: blur(4px); */
+    }
+    h1 {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 3rem;
+      font-weight: bolder;
+      padding: 1rem 1rem;
+      background-color: transparent;
+      margin-left: 10rem;
+      margin-right: 10rem;
+      box-shadow: 0px 4px 8px 16px rgba(0, 0, 0, 0.3);
+      border-radius: 1rem;
+    }
+    .form1 {
+      padding-top: 2rem;
+      font-size: larger;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #txtArea {
+      height: 2rem;
+      width: 15rem;
+      border-radius: 0.5rem;
+      text-align: center;
+      font-size: larger;
+      /* color: grey; */
+    }
+    .btn1 {
+      margin-top: 2rem;
+      margin-left: 15rem;
+      height: 3rem;
+      width: 10rem;
+      border-radius: 1rem;
+      font-size: larger;
+      background-color: transparent;
+      border-color: transparent;
+      font-weight: bolder;
+      cursor: pointer;
+      box-shadow: 0px 2px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn1:hover {
+      color: blue;
+      transition: 1s;
+    }
+  </style>
+  <body>
+    <h1 align="center">STUDENT FORM</h1>
+    <table class="form1" align="center">
+      <tr>
+        <td>Fullname:</td>
+        <td><input type="text" placeholder="Your Name." id="txtArea" /></td>
+      </tr>
+      <tr>
+        <td>Age:</td>
+        <td><input type="number" placeholder="Your age" id="txtArea" /></td>
+      </tr>
+      <tr>
+        <td>Contact Number:</td>
+        <td><input type="text" placeholder="contact number" id="txtArea" /></td>
+      </tr>
+      <tr>
+        <td>Father's Name:</td>
+        <td><input type="text" placeholder="Father's name" id="txtArea" /></td>
+      </tr>
+      <tr>
+        <td>Mother's Name:</td>
+        <td><input type="text" placeholder="Mother's name" id="txtArea" /></td>
+      </tr>
+      <tr>
+        <td>Primary Address:</td>
+        <td><input type="text" placeholder="Address" id="txtArea" /></td>
+      </tr>
+      <tr>
+        <td>Secondary Address:</td>
+        <td><input type="text" placeholder="Address" id="txtArea" /></td>
+      </tr>
+      <tr>
+        <td>Guardian's Ph.No:</td>
+        <td><input type="text" placeholder="" id="txtArea" /></td>
+      </tr>
+      <tr>
+        <td>Gender:</td>
+        <td>
+          <input type="radio" name="Gender" value="male" />Male
+          <input type="radio" name="Gender" value="female" />Female
+          <input type="radio" name="Gender" value="others" />Others
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" id="terms" name="terms" value="accepted" />
+          <label for="terms">I accept the terms and conditions</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button class="btn1" onclick="clickEvent1()">
+            <a href="indexForm.htm" style="text-decoration: none; color: grey"
+              >SUBMIT</a
+            >
+          </button>
+          <!-- <button class="btn2" onclick="clickEvent2()">CANCEL</button> -->
+        </td>
+      </tr>
+    </table>
+    <script src="form.js"></script>
+  </body>
+</html>
